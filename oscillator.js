@@ -5,7 +5,7 @@ let s, instanced=false;
 var oscillator, gainNode, audioCtx;
 
 function init() {
-  console.log('hiii')
+  //console.log('hiii')
 
   if (!instanced) {
       s = new p5(sketch);
