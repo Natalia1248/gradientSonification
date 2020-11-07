@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <script src="oscillator.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.min.js"></script>
+    <script src="main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link href="sliderstyles.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!---<h1>yayyyy</h1>-->
+    
+    <div class="mydiv">
+    <button onclick="init()">start!</button>
+    <!--<button onclick="one()">one</button>
+    <button onclick="(function(){s.makeImage(0.2, 0); console.log('hi')})()">two</button>-->
+    <button onclick="mute()">stopp</button>
+
+    <div class="slidecontainer">
+        <input type="range" min="1" max="10000" value="800" class="slider" id="myRange">
+    </div>
+    <script>
+        var slider = document.getElementById("myRange");
+        
+        slider.oninput = function() {
+          if (instanced) gainNode.gain.value = this.value/100000;
+        }
+    </script>
+
+    <input id="ainput" placeholder="a">
+    <input id="binput" placeholder="b">
+    <button onclick="(()=>{
+        let a=document.getElementById('ainput').value;
+        let b=document.getElementById('binput').value;
+        //console.log(a,b)
+        if( !(isNaN(a)) && !(isNaN(b)) ){
+            //console.log(0−0.70176,0.3842);
+            s.makeImage(a,b);
+        }
+
+    })()">usar este C</button>
+    <input id="hinput" placeholder="pegar link de una imagen">
+    <button onclick="(()=>{})(s.loadFromLink(document.getElementById('hinput').value))">usar esa imagen</button>
+    </div>
+
+</body>
