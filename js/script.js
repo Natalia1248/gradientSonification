@@ -7,21 +7,21 @@ let allPage = [{
     },
     {
         pagePreviewImg: "./assets/pagePreview/plotter2.png",
-        pageTitle: "sonificador de gradientes 0.b",
+        pageTitle: "Sonificador de gradientes 0.b",
         pageSubtitle: "",
         pageDescription: "Continuamos con la misma idea de traducir a sonido, ahora con un gradiente un poco mas 'rugoso'",
         pageUrl: "./plotter2/index.htm"
     },
     {
         pagePreviewImg: "./assets/pagePreview/fractal.png",
-        pageTitle: "sonificar un fractal",
+        pageTitle: "Sonificar un fractal",
         pageSubtitle: "",
         pageDescription: "Trasladamos la idea de sonificar un gradiente, al problema de entender intuitiva e interactivamente la rugosidad de un fractal",
         pageUrl: "./fractal/doc.htm"
     },
     {
         pagePreviewImg: "./assets/pagePreview/3dmap.jpeg",
-        pageTitle: "sonificar un terreno marciano",
+        pageTitle: "Sonificar un terreno marciano",
         pageSubtitle: "",
         pageDescription: "Cualquier cosa que pueda ser expresada como 'mapas de calor puede' ser sonificada. Aquí sonificamos (y transformamos en modelo 3d) un mapa de calor que expresa las alturas de un territorio en Marte",
         pageUrl: "./3d/index.html"
