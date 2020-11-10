@@ -43,16 +43,16 @@ function setup() {
     for(let i=0; i<(lalto-uno); i+=uno){
       for (let j=0; j<(lancho-uno); j+=uno){
 
-        h=-0.7 * getHue(img.get(j,i)) * scale;
+        h=-0.65 * getHue(img.get(j,i)) * scale;
         let v1='v '+(j*scale)+' '+(i*scale)+' '+h+'\n';
 
-        h=-0.7 * getHue(img.get(j+uno,i)) * scale;
+        h=-0.65 * getHue(img.get(j+uno,i)) * scale;
         let v2='v '+(j+uno)*scale+' '+(i)*scale+' '+h+'\n';
 
-        h=-0.7 * getHue(img.get(j+uno,i+uno)) * scale;
+        h=-0.65 * getHue(img.get(j+uno,i+uno)) * scale;
         let v3='v '+(j+uno)*scale+' '+(i+uno)*scale+' '+h+'\n';
 
-        h=-0.7 * getHue(img.get(j,i+uno)) * scale;
+        h=-0.65 * getHue(img.get(j,i+uno)) * scale;
         let v4='v '+(j)*scale+' '+(i+uno)*scale+' '+h+'\n';
 
         let t1='vt '+ j/lancho + ' ' + i/lalto;
@@ -89,7 +89,7 @@ function setup() {
 let Xrotation=0;
 
 function draw() {
-    background (100);
+    background (2,1,46);
     //rotateX(radians(90));
     rotateX(Xrotation);
     translate(-img.width*scale/2, -150, 00);

@@ -45,6 +45,21 @@ function sketch(p){
         p.image(p.img, 0, 0);
 
         setFrequency(p.map(p.mycolor[0], 0, 255, 500, 8000));
+
+        p.colorMode(p.RGB);
+        p.c=p.color(p.mycolor);
+        p.colorMode(p.HSB);
+        p.rh=p.round(p.red(p.c)).toString(16);
+        if(p.rh.length==1) p.rh='0'+p.rh;
+        else if(p.rh.length==0) p.rh='00';
+        p.gh=p.round(p.green(p.c)).toString(16);
+        if(p.gh.length==1) p.gh='0'+p.gh;
+        else if(p.gh.length==0) p.gh='00';
+        p.bh=p.round(p.blue(p.c)).toString(16);
+        if(p.bh.length==1) p.bh='0'+p.bh;
+        else if(p.bh.length==0) p.bh='00';
+        
+        document.body.style.backgroundColor='#'+p.rh+p.gh+p.bh;
        
     }
 

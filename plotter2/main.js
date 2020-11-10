@@ -81,4 +81,18 @@ function draw(){
     if(started)
         setFrequency(map(m,-50000, 50000, 200, 20000));
 
+    colorMode(HSB);
+    let c = color(map(m,-50000, 50000, 0,255), 255,255);
+    let rh=round(red(c)).toString(16);
+    if(rh.length==1) rh='0'+rh;
+    else if(rh.length==0) rh='00';
+    let gh=round(green(c)).toString(16);
+    if(gh.length==1) gh='0'+gh;
+    else if(gh.length==0) gh='00';
+    let bh=round(blue(c)).toString(16);
+    if(bh.length==1) bh='0'+bh;
+    else if(bh.length==0) bh='00';
+    
+    document.body.style.backgroundColor='#'+rh+gh+bh;
+
 }

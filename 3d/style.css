@@ -14,5 +14,11 @@ html, body {
   }
   .mydiv {
     position: absolute;
-    top: 5%;
+    top: 2%;
+  }
+  .bottomdiv {
+    color:grey;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
   }
