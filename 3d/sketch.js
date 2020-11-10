@@ -7,7 +7,7 @@ function preload(){
   //
   //https://upload.wikimedia.org/wikipedia/commons/5/50/Eyetracking_heat_map_Wikipedia.jpg
   //https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Moon_worldwind.jpg/1024px-Moon_worldwind.jpg
-  img=loadImage('assets/aljsf');
+  img=loadImage('assets/ljlj');
 
 }
 
